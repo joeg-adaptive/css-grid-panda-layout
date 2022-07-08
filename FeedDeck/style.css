@@ -1,0 +1,122 @@
+body {
+	margin: 0;
+}
+.main-grid {
+	display: grid;
+	/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: auto;
+	grid-template-areas: 'feedOne feedTwo feedThree feedFour feedFive feedSix feedSeven';
+	overflow-x: scroll;
+	height: 100vh;
+}
+.feedOne {
+	grid-area: feedOne;
+	background-color: black;
+	min-width: 25vw;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+	row-gap: 3vh;
+	overflow: scroll;
+	border: 1px solid black;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+.feedTwo {
+	grid-area: feedTwo;
+	background-color: black;
+	min-width: 25vw;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+	row-gap: 3vh;
+	overflow: scroll;
+	border: 1px solid black;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+.feedThree {
+	grid-area: feedThree;
+	background-color: black;
+	min-width: 25vw;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+	row-gap: 3vh;
+	overflow: scroll;
+	border: 1px solid black;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+.feedFour {
+	grid-area: feedFour;
+	background-color: black;
+	min-width: 25vw;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+	row-gap: 3vh;
+	overflow: scroll;
+	border: 1px solid black;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+.feedFive {
+	grid-area: feedFive;
+	background-color: black;
+	min-width: 25vw;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+	row-gap: 3vh;
+	overflow: scroll;
+	border: 1px solid black;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+.feedSix {
+	grid-area: feedSix;
+	background-color: black;
+	min-width: 25vw;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+	row-gap: 3vh;
+	overflow: scroll;
+	border: 1px solid black;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+.feedSeven {
+	grid-area: feedSeven;
+	background-color: black;
+	min-width: 25vw;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+	row-gap: 3vh;
+	overflow: scroll;
+	border: 1px solid black;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+.feed-source {
+	min-height: 100px;
+}
+.source1 {
+	background-color: rgb(13, 206, 236);
+}
+.source2 {
+	background-color: purple;
+}
+.source3 {
+	background-color: orange;
+}
+.source4 {
+	background-color: green;
+}
+.source5 {
+	background-color: red;
+}

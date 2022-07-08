@@ -1,0 +1,84 @@
+body {
+	margin: 0;
+}
+.main-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 'feedOne feedTwo feedThree feedFour';
+	height: 100vh;
+	overflow: hidden;
+}
+.feedOne {
+	grid-area: feedOne;
+	background-color: black;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+	row-gap: 3vh;
+	overflow: scroll;
+	border: 1px solid black;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+.feedTwo {
+	grid-area: feedTwo;
+	background-color: black;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+	row-gap: 3vh;
+	overflow: scroll;
+	border: 1px solid black;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+.feedThree {
+	grid-area: feedThree;
+	background-color: black;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+	row-gap: 3vh;
+	overflow: scroll;
+	border: 1px solid black;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+.feedFour {
+	grid-area: feedFour;
+	background-color: black;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+	row-gap: 3vh;
+	overflow: scroll;
+	border: 1px solid black;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+.feedFour::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+.source {
+	min-height: 100px;
+}
+.source1 {
+	background-color: rgb(13, 206, 236);
+}
+.source2 {
+	background-color: purple;
+}
+.source3 {
+	background-color: orange;
+}
+.source4 {
+	background-color: green;
+}
+.source5 {
+	background-color: red;
+}

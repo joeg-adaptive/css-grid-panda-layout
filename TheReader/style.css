@@ -1,0 +1,70 @@
+body {
+	margin: 0;
+}
+.main-grid {
+	display: grid;
+	grid-template-columns: 1fr 2fr 3fr;
+	grid-template-rows: auto;
+	grid-template-areas: 'feed topic information';
+	height: 100vh;
+	overflow: hidden;
+}
+.feed {
+	grid-area: feed;
+	background-color: black;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+	row-gap: 3vh;
+	overflow: scroll;
+	border: 1px solid black;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+.feed::-webkit-scrollbar {
+	display: none;
+}
+.feed-source {
+	min-height: 100px;
+	min-width: 100px;
+}
+.topic {
+	grid-area: topic;
+	background-color: darkgray;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+	row-gap: 3vh;
+	overflow: scroll;
+	border: 1px solid black;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+.topic::-webkit-scrollbar {
+	display: none;
+}
+.topic-source {
+	min-height: 100px;
+	min-width: 100px;
+}
+.information {
+	grid-area: information;
+	background-color: whitesmoke;
+	border: 1px solid black;
+}
+
+.source1 {
+	background-color: rgb(13, 206, 236);
+}
+.source2 {
+	background-color: purple;
+}
+.source3 {
+	background-color: orange;
+}
+.source4 {
+	background-color: green;
+}
+.source5 {
+	background-color: red;
+}
